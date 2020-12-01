@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/pw-style.css" />
+    <title>PLANK WALLSIT AND STAND</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script
+      src="https://unpkg.com/ml5@latest/dist/ml5.min.js"
+      type="text/javascript"
+    ></script>
+  </head>
+  <body>
+    <div class="btn" id="btnStand">
+      <h1>STAND</h1>
+    </div>
+    <div class="btn" id="btnWallsit">
+      <h1>WALLSIT</h1>
+    </div>
+    <div class="btn" id="btnPlank">
+      <h1>PLANK</h1>
+    </div>
+    <div class="btn" id="btnFinish">
+      <h1>FINISH</h1>
+    </div>
+
+    <div class="state">
+      <h1 class="heading">STATE is</h1>
+      <h1 id="clickedState">Waiting</h1>
+      <h1 class="heading">Chosen Exercise is</h1>
+      <h1 id="clickedExercise">Exercise</h1>
+    </div>
+
+    <div class="live">
+      <div id="videoElement"></div>
+    </div>
+    <script src="js/PWevent.js"></script>
+    <script src="js/RealtimeData.js"></script>
+  </body>
+</html>
