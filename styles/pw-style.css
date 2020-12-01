@@ -1,0 +1,65 @@
+body,
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  color: aliceblue;
+  font-family: Roboto;
+
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 4fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "stand state live"
+    "wallsit state live"
+    "plank state live"
+    "finish finish live";
+}
+.btn {
+  border: white solid 1px;
+  background-color: brown;
+  text-align: center;
+  align-self: center;
+}
+#btnStand {
+  grid-area: stand;
+}
+#btnWallsit {
+  grid-area: wallsit;
+}
+#btnPlank {
+  grid-area: plank;
+}
+#btnFinish {
+  grid-area: finish;
+  background-color: green;
+}
+
+.state {
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  padding: 10%;
+  grid-area: state;
+  border: gray solid 4px;
+}
+
+.live {
+  border: white solid 1px;
+  background-color: gray;
+  grid-area: live;
+  margin: 4%;
+}
+
+#videoElement {
+  background-color: lightgrey;
+  height: 54rem;
+}
+.heading {
+  color: aqua;
+}
