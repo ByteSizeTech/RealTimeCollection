@@ -53,7 +53,7 @@ function setup() {
   //   weights: "model/model.weights.bin",
   // };
   // brain.load(modelInfo, brainLoaded);
-  poseNet = ml5.poseNet(video, modelLoaded);
+  poseNet = ml5.poseNet(video, posenetOpts,modelLoaded);
   poseNet.on("pose", gotResults);
   video.hide();
 
