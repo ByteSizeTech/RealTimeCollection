@@ -16,8 +16,8 @@ function pupClicked() {
       console.log("not collecting");
       state = "waiting";
       document.getElementById("clickedState").innerHTML = state;
-    }, 50);
-  }, 50);
+    }, 80);
+  }, 80);
 }
 
 function pdownClicked() {
@@ -30,8 +30,8 @@ function pdownClicked() {
       console.log("not collecting");
       state = "waiting";
       document.getElementById("clickedState").innerHTML = state;
-    }, 50);
-  }, 50);
+    }, 80);
+  }, 80);
 }
 
 function finishClicked() {
